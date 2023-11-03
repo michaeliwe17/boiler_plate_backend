@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return ["message" => "Welcome"];
 });
+Route::get('/login', function () {
+    return ["message" => "Login dulu bosqu"];
+})->name('login');
